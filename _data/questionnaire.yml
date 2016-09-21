@@ -1,0 +1,13 @@
+- q: name
+  id: name
+  a_type: text
+  placeholder: Mark Spitz
+- q: email
+  id: email
+  a_type: text
+  placeholder: aquaman@ucla.edu
+- q: phone
+  id: phone
+  a_type: text
+  placeholder: 917 555-1212
+

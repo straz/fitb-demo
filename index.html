@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+<div class="jumbotron stadium">
+  <img src="pix/stadium.jpg">
+</div>
+
+<div class="container">
+
+<h1>Fit Biomics</h1>
+
+<form class="form-horizontal">
+  {% for q in site.data.questionnaire %}
+  <div class="form-group">
+    <label class=" col-sm-2 control-label" 
+	   for="textinput">{{ q.q }}</label>  
+    <div class="col-sm-10">
+      <input id="{{ q.id }}" name="textinput" 
+	     type="{{ q.a_type}}" placeholder="{{ q.placeholder}}" 
+	     class="form-control input-md">
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="form-group">
+    <label class=" col-sm-2 control-label" for="textinput">weight</label>
+    <div class="col-sm-10">
+      <div class="row">
+	<div class="col-lg-6">
+	  <div class="input-group">
+	    <input type="text" class="form-control" aria-label="...">
+	    <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">kg <span class="caret"></span></button>
+              <ul class="dropdown-menu dropdown-menu-right">
+		<li><a href="#">kg</a></li>
+		<li><a href="#">pounds</a></li>
+              </ul>
+	    </div><!-- /btn-group -->
+	  </div><!-- /input-group -->
+	</div><!-- /.col-lg-6 -->
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class=" col-sm-2 control-label" 
+	   for="textinput">music</label>  
+    <div class="col-sm-10">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	my jam
+      <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+	<li><a href="#">rock</a></li>
+	<li><a href="#">top 40</a></li>
+	<li><a href="#">classical</a></li>
+	<li><a href="#">country</a></li>
+	<li><a href="#">jazz</a></li>
+	<li><a href="#">reggae</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">no music, please</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class=" col-sm-2 control-label" 
+	   for="textinput">mood</label>  
+    <div class="col-sm-10">
+      <div class="btn-group" role="group">
+	<button type="button" class="btn btn-default">Sad</button>
+	<button type="button" class="btn btn-default">Neutral</button>
+	<button type="button" class="btn btn-default">Happy</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+
+</form>
+
+</div><!-- div.container -->

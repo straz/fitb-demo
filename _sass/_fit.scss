@@ -1,0 +1,14 @@
+.jumbotron.stadium {
+  padding: 0px;
+  @media (min-width: 567px) {
+    img {height: 9em; width: 100%; object-fit: cover;}
+   }
+  @media (min-width: 767px) {
+    img {height: 11em; width: 100%; object-fit: cover;}
+   }
+  @media (min-width: 967px) {
+    img {height: 18em; width: 100%; object-fit: cover;}
+   }
+}
+
+
