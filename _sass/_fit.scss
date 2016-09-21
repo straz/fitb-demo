@@ -1,3 +1,10 @@
+@import 'https://fonts.googleapis.com/css?family=Graduate';
+
+h1.home {
+   font-family: 'Graduate', Helvetica;
+   margin-bottom: 2em;
+}
+
 .jumbotron.stadium {
   padding: 0px;
   @media (min-width: 567px) {
