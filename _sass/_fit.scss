@@ -7,10 +7,13 @@
 
 h1.home {
    font-family: 'Freshman', Helvetica;
-   font-size: 500%;
    font-weight: normal;
    color: #050;
    margin-bottom: .5em;
+   font-size: 500%;
+   @media screen and (max-width: 500px) {
+     font-size: 400%;   
+   }
 }
 
 .jumbotron.stadium {
