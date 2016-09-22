@@ -1,8 +1,16 @@
-@import 'https://fonts.googleapis.com/css?family=Graduate';
+@font-face {
+  font-family: 'Freshman';
+  src: url('../pix/Freshman.ttf') format('truetype');
+}
+
+/* @import 'https://fonts.googleapis.com/css?family=Graduate'; */
 
 h1.home {
-   font-family: 'Graduate', Helvetica;
-   margin-bottom: 2em;
+   font-family: 'Freshman', Helvetica;
+   font-size: 500%;
+   font-weight: normal;
+   color: #050;
+   margin-bottom: .5em;
 }
 
 .jumbotron.stadium {
